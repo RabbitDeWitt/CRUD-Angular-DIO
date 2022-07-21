@@ -1,0 +1,11 @@
+<mat-list-item>
+  <p [ngStyle]="{'text-decoration': todo.itsDone ? 'line-through' : 'none'}">
+    {{ todo.title }}
+  </p>
+  <button mat-icon-button color="basic" aria-label="Concluir tarefa" (click)="markAsDone()">
+    <mat-icon>done</mat-icon>
+  </button>
+  <button mat-icon-button color="warn" aria-label="Excluir tarefa" (click)="removeTodo()">
+    <mat-icon>delete</mat-icon>
+  </button>
+</mat-list-item>
